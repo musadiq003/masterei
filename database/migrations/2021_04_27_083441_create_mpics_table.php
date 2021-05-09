@@ -15,11 +15,11 @@ class CreateMpicsTable extends Migration
     {
         Schema::create('mpics', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('img');
-            $table->string('text1');
-            $table->string('text2');
-            $table->string('am');
-            $table->string('master_id');
+            $table->string('img')->nullable();
+            $table->string('text1')->nullable();
+            $table->string('text2')->nullable();
+            $table->string('am')->nullable();
+            $table->string('master_id')->nullable();
             $table->timestamps();
         });
     }
