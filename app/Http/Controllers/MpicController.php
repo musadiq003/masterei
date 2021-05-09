@@ -108,7 +108,8 @@ class MpicController extends Controller
 
     	$master = mpic::get()->where('master_id',$id);
         $sidebar = master::all();
-        return view('front_page/p_detail',['master'=>$master,'sidebar'=>$sidebar]);
+        $seo = master::all();
+        return view('front_page/p_detail',['master'=>$master,'sidebar'=>$sidebar,'seo'=>$seo]);
     }
 
 }
