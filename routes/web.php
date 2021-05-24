@@ -15,11 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });*/
 
+/*
+Route::get('/home', 'HomeController@inex')->name('home');
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-Route::get('/', 'HomeController@f_page');
+*/
+Route::get('/','HomeController@index');
 Route::get('/master/products', 'HomeController@products');
 Route::post('/sendemail/send', 'MailController@send');
 Route::get('/contact/us', 'HomeController@contect');
@@ -68,3 +68,7 @@ Route::get('/delete/mpic/{id}', 'MpicController@delete_mpic');
 
 
 });
+
+
+
+

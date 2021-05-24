@@ -22,14 +22,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function nn()
     {
         return view('home');
     }
 
 
 
-     public function f_page()
+     public function index()
     {
         $seo = master::all();
         $banner = banner::all();
