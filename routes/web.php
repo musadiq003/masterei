@@ -15,10 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });*/
 
-/*
+
 Route::get('/home', 'HomeController@inex')->name('home');
 
-*/
+
 Route::get('/','HomeController@index');
 Route::get('/master/products', 'HomeController@products');
 Route::post('/sendemail/send', 'MailController@send');
