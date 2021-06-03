@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 namespace App\Http\Controllers;
 
@@ -9,9 +9,9 @@ class MpicController extends Controller
 {
      public function admin_mpic()
     {
-
+    	$seo = master::all();
     	$mpic = mpic::all();
-        return view('admin/mpic/mpic',['mpic'=>$mpic]);
+        return view('admin/mpic/mpic',['mpic'=>$mpic,'seo'=>$seo]);
     }
 
   

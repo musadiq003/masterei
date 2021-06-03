@@ -66,10 +66,10 @@
         
         <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
 
-        <script src="{{URL::asset('/js/menu/lib/easing/easing.min.js')}}"></script>
-        <script src="{{URL::asset('/js/menu/lib/owlcarousel/owl.carousel.min.js')}}"></script>
-        <script src="{{URL::asset('/js/menu/lib/waypoints/waypoints.min.js')}}"></script>
-        <script src="{{URL::asset('/js/menu/lib/counterup/counterup.min.js')}}"></script>
+        <script src="{{URL::asset('public/js/menu/lib/easing/easing.min.js')}}"></script>
+        <script src="{{URL::asset('public/js/menu/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+        <script src="{{URL::asset('public/js/menu/lib/waypoints/waypoints.min.js')}}"></script>
+        <script src="{{URL::asset('public/js/menu/lib/counterup/counterup.min.js')}}"></script>
         
 
 

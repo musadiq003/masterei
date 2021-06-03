@@ -60,7 +60,7 @@ p{
       <div class="thumbnail">
         <a href="/w3images/lights.jpg" target="_blank">
         	
-          <img src='{{url("images/$masters->img")}}' alt="Lights" style="width:100%">
+          <img src='{{url("public/images/$masters->img")}}' alt="Lights" style="width:100%">
         
           <div class="caption">
          

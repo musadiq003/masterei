@@ -3,11 +3,12 @@
 
         <!-- Carousel Start -->
         <div class="carousel">
+            @foreach($banner as $banners)
             <div class="container-fluid">
                 <div class="owl-carousel">
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="img/carousel-1.jpg" alt="Image">
+                            <img style="width: 100px" src='{{url("public/images/$banners->img")}}'>
                         </div>
                         <div class="carousel-text">
                            <!--  <h1>Fastest Way to Achieve Success</h1>
@@ -19,25 +20,26 @@
                                 <a class="btn btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal"><i class="fa fa-play"></i>Watch Video</a>
                             </div> -->
                         </div>
-                    </div>
+
+                    <!-- </div>
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="img/carousel-2.jpg" alt="Image">
+                            <img src="public/img/carousel-2.jpg" alt="Image">
                         </div>
                         <div class="carousel-text">
                             <h1>Your Success Our Achievement</h1>
                             <p>
                                 Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis, orci sodales varius fermentum, tortor
                             </p>
-                            <!-- <div class="carousel-btn">
+                            <div class="carousel-btn">
                                 <a class="btn" href=""><i class="fa fa-link"></i>Get Started</a>
                                 <a class="btn btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal"><i class="fa fa-play"></i>Watch Video</a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="img/carousel-3.jpg" alt="Image">
+                            <img src="public/img/carousel-3.jpg" alt="Image">
                         </div>
                         <div class="carousel-text">
                             <h1>Your Business Our Effort</h1>
@@ -45,9 +47,10 @@
                                 Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam. Proin pellentesque odio
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
+            @endforeach
         </div>
         <!-- Carousel End -->
 
@@ -82,19 +85,19 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
-                            <img src="img/icon-1.png" alt="Icon">
+                            <img src="public/img/icon-1.png" alt="Icon">
                             <h2>Individual Approach</h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
-                            <img src="img/icon-8.png" alt="Icon">
+                            <img src="public/img/icon-8.png" alt="Icon">
                             <h2>100% Success</h2>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="fact-item">
-                            <img src="img/icon-6.png" alt="Icon">
+                            <img src="public/img/icon-6.png" alt="Icon">
                             <h2>100% Satisfaction</h2>
                         </div>
                     </div>
@@ -111,10 +114,10 @@
                     <div class="col-md-6">
                         <div class="about-img">
                             <div class="about-img-1">
-                                <img src="img/about-2.jpg" alt="Image">
+                                <img src="public/img/about-2.jpg" alt="Image">
                             </div>
                             <div class="about-img-2">
-                                <img src="img/about-1.jpg" alt="Image">
+                                <img src="public/img/about-1.jpg" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -148,7 +151,7 @@
                 <div class="row align-items-end">
                     <div class="col-md-6">
                         <div class="feature-img">
-                            <img src="img/12.jpg" alt="Image">
+                            <img src="public/img/12.jpg" alt="Image">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -205,7 +208,7 @@
                 </div>
                 <div class="owl-carousel testimonials-carousel">
                     <div class="testimonial-item">
-                        <img src="img/testimonial-1.jpg" alt="Image">
+                        <img src="public/img/testimonial-1.jpg" alt="Image">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat
                         </p>
@@ -213,7 +216,7 @@
                         <h3>Profession</h3>
                     </div>
                     <div class="testimonial-item">
-                        <img src="img/testimonial-2.jpg" alt="Image">
+                        <img src="public/img/testimonial-2.jpg" alt="Image">
                         <p>
                             Phasellus pellentesque tempus pretium. Quisque in enim sit amet purus venenatis porttitor sed non velit. Vivamus vehicula finibus
                         </p>
@@ -221,7 +224,7 @@
                         <h3>Profession</h3>
                     </div>
                     <div class="testimonial-item">
-                        <img src="img/testimonial-3.jpg" alt="Image">
+                        <img src="public/img/testimonial-3.jpg" alt="Image">
                         <p>
                             Sed in lectus eu eros tincidunt cursus. Aliquam eleifend velit nisl. Sed et posuere urna, ut vestibulum massa. Integer quis magna
                         </p>
@@ -229,7 +232,7 @@
                         <h3>Profession</h3>
                     </div>
                     <div class="testimonial-item">
-                        <img src="img/testimonial-4.jpg" alt="Image">
+                        <img src="public/img/testimonial-4.jpg" alt="Image">
                         <p>
                             Sed in lectus eu eros tincidunt cursus. Aliquam eleifend velit nisl. Sed et posuere urna, ut vestibulum massa. Integer quis magna
                         </p>
@@ -253,7 +256,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-1.jpg" alt="Team Image">
+                                <img src="public/img/team-1.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>Donald John</h2>
@@ -270,7 +273,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-2.jpg" alt="Team Image">
+                                <img src="public/img/team-2.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>Adam Phillips</h2>
@@ -287,7 +290,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-3.jpg" alt="Team Image">
+                                <img src="public/img/team-3.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>Thomas Olsen</h2>
@@ -304,7 +307,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/team-4.jpg" alt="Team Image">
+                                <img src="public/img/team-4.jpg" alt="Team Image">
                             </div>
                             <div class="team-text">
                                 <h2>James Alien</h2>
@@ -404,7 +407,7 @@
                 <div class="owl-carousel blog-carousel">
                     <div class="blog-item">
                         <div class="blog-img">
-                            <img src="img/blog-1.jpg" alt="Blog">
+                            <img src="public/img/blog-1.jpg" alt="Blog">
                         </div>
                         <div class="blog-content">
                             <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
@@ -424,7 +427,7 @@
                     </div>
                     <div class="blog-item">
                         <div class="blog-img">
-                            <img src="img/blog-2.jpg" alt="Blog">
+                            <img src="public/img/blog-2.jpg" alt="Blog">
                         </div>
                         <div class="blog-content">
                             <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
@@ -444,7 +447,7 @@
                     </div>
                     <div class="blog-item">
                         <div class="blog-img">
-                            <img src="img/blog-3.jpg" alt="Blog">
+                            <img src="public/img/blog-3.jpg" alt="Blog">
                         </div>
                         <div class="blog-content">
                             <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>

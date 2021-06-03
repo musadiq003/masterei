@@ -39,7 +39,7 @@
                                                     $x++;
                                                         ?>
                                                 </td>
-                                                <td><img style="width: 100px" src='{{url("images/$banners->img")}}'></td>
+                                                <td><img style="width: 100px" src='{{url("public/images/$banners->img")}}'></td>
                                                 <td>{{$banners->text}}</td>
                                                 <td>
                                                     <a href='{{url("admin/update/banner/{$banners->id}")}}'>

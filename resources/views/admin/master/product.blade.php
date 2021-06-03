@@ -42,7 +42,7 @@
                                                 </td>
                                                 <td>
                                                     <a href='{{url("/admin/master/product/{$masters->id}")}}'>
-                                                    <img style="width: 100px" src='{{url("images/$masters->img")}}'>
+                                                    <img style="width: 100px" src='{{url("public/images/$masters->img")}}'>
                                                 </a>
                                                 </td>
                                                 <td>{{$masters->text1}}</td>
